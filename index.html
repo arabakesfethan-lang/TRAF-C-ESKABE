@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Traffic Escape</title>
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+
+<div id="home" class="scr on">
+ <div class="bar"><button class="ib" data-go="set">⚙</button><div class="pill">★ <span class="ts">0</span></div></div>
+ <div class="mid">
+  <div class="logo">TRAFFIC<br><b>ESCAPE</b></div>
+  <button class="btn big" id="play">OYNA</button>
+  <div class="row"><button class="btn s" id="cont">Devam et</button><button class="btn s" data-go="lv">Bölümler</button></div>
+ </div>
+ <div class="row"><button class="btn s" id="stat">İstatistikler</button><button class="btn s" data-go="set">Tema</button><button class="btn s" id="qsnd">Ses</button></div>
+</div>
+
+<div id="lv" class="scr"><div class="bar"><button class="ib" data-go="home">←</button><div class="pill">Bölümler</div><div class="pill">★ <span class="ts">0</span></div></div><br><div id="grid"></div></div>
+
+<div id="game" class="scr">
+ <div class="bar"><button class="ib" data-go="home">←</button>
+  <div id="hud"><div class="pill" id="lvn"></div><div class="pill">Hamle <span id="mv">0</span></div></div>
+  <div class="pill">★ <span class="ts">0</span></div></div>
+ <div id="bw"><div id="board"></div></div>
+ <div class="row" style="padding-top:8px"><button class="btn s" id="undo">↶ Geri al</button><button class="btn s" id="rst">↻ Yeniden</button><button class="btn s" id="hint">💡 İpucu</button></div>
+</div>
+
+<div id="set" class="scr"><div class="bar"><button class="ib" data-go="home">←</button><div class="pill">Ayarlar</div><span style="width:44px"></span></div><br>
+ <div class="card" style="box-shadow:none;animation:none;width:100%;max-width:480px;text-align:left">
+  <div class="set">Ses<button class="tg" data-k="sound"></button></div>
+  <div class="set">Müzik<button class="tg" data-k="music"></button></div>
+  <div class="set">Titreşim<button class="tg" data-k="vib"></button></div>
+  <div class="set">Tema<div class="row" id="ths"></div></div>
+  <button class="btn s" id="reset">Oyunu sıfırla</button>
+  <button class="btn s" id="about">Oyun hakkında</button>
+ </div></div>
+
+<div id="modal" class="modal"><div class="card" id="mc"></div></div>
+<div id="load">Bölüm hazırlanıyor…</div>
+
+<script src="js/storage.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/levels.js"></script>
+<script src="js/themes.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/game.js"></script>
+<script src="js/main.js"></script>
+</body></html>
